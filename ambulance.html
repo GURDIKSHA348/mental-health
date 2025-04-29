@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="page.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Ambulance - Mental Health Emergency</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f9fc;
+        color: #333;
+      }
+
+      /* Main container */
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      /* Heading */
+      .page-heading {
+        text-align: center;
+        font-size: 36px;
+        color: #00796b;
+        margin-bottom: 20px;
+      }
+
+      /* Form Styles */
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        font-size: 18px;
+        color: #00796b;
+        margin-bottom: 10px;
+      }
+
+      input,
+      select,
+      textarea {
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      /* Buttons */
+      .btn {
+        background-color: #00796b;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #004d40;
+      }
+
+      /* Footer Information */
+      .footer-info {
+        text-align: center;
+        font-size: 16px;
+        color: #555;
+        margin-top: 40px;
+      }
+
+      .footer-info a {
+        color: #00796b;
+        text-decoration: none;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          padding: 15px;
+        }
+
+        .page-heading {
+          font-size: 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <H4>MENTOR care</H4>
+        <div class="header">
+            <div class="logo-container">
+               <img src="logoo.jpg" class="logo" alt="MENTOR CARE logo"  height="50px">
+            </div>
+               
+        
+        <ul class="navbar">
+        
+         <li><a href="home.html">Home</a></li>
+          <li><a href="register.html">Register/login</a></li>
+          <li><a href="about us.html">Appointment</a></li>
+         
+          <li><a href="service.html"> services</a></li>
+          <li><a href="ambulance.html">Ambulance </a></li>
+          <li><a href="blog.html"> Blogs</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+               <li><a href="FAQ.html">FAQ</a></li>
+               <li><a href="about us.html"> About us</a></li>
+  </ul>
+  </div>
+   </nav>
+    <div class="container">
+      <!-- Page Heading -->
+      <h1 class="page-heading">
+        Request Ambulance for Mental Health Emergency
+      </h1>
+
+      <!-- Request Ambulance Form -->
+      <form action="http://localhost/komal/submit_request.php" method="POST">
+        <!-- Full Name -->
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="user_name"
+          name="user_name"
+          required
+          placeholder="Enter Full Name"
+        />
+
+        
+
+        <!-- Email Address -->
+        <label for="email">location</label>
+        <input
+          type="location"
+          id="location"
+          name="location"
+          required
+          placeholder="Enter Your location"
+        />
+
+       
+
+        <!-- Description of Situation -->
+        <label for="description">Mental health issues:</label>
+        <textarea
+          id="mental_health_issue"
+          name="mental_health_issue"
+          placeholder="mental_health_issue"
+          required
+        ></textarea>
+
+  <!-- Phone Number -->
+  <label for="phone">Phone Number:</label>
+  <input
+    type="tel"
+    id=" contact_number"
+    name=" contact_number"
+    required
+    placeholder="Enter Contact Number"
+    pattern="[0-9]{10}"
+  />
+
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn">Request Ambulance</button>
+      </form>
+
+      <!-- Footer Information -->
+      <div class="footer-info">
+        <p>
+          If this is an emergency, please call
+          <strong>1800-XXX-XXXX</strong> for immediate assistance.
+        </p>
+        <p>
+         <h2> <a href="contact.html">Contact Us</a></h2> for more information or support.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health Assistance - Book Appointment</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+      }
+      header {
+        background-color: #7cc8e9;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+      }
+      .doctor-details,
+      .appointment-form {
+        width: 48%;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      .doctor-details h2,
+      .appointment-form h2 {
+        color: #333;
+      }
+      .doctor-details img {
+        width: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      .doctor-details p {
+        line-height: 1.6;
+      }
+      .appointment-form input,
+      .appointment-form select,
+      .appointment-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .appointment-form button {
+        background-color: #93d9e4;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .appointment-form button:hover {
+        background-color: #45a049;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .doctor-details,
+        .appointment-form {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>Mental Health Assistance</h1>
+      <p>Book an appointment with our experienced doctors</p>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Doctor's Details Section -->
+      <div class="doctor-details">
+        <h2>Dr. Vijay Mahajan - Senior Consultant Physician</h2>
+        <img
+          src="dr.vijay.jpg"
+          alt="Dr. Vijay Mahajan"
+        />
+        <p><strong>Specialization:</strong>Medical and Heart Specialist.</p>
+        <p>
+          <strong>Experience:</strong> 15+ years in the mental health field,
+          specializing in various mental health disorders and therapies.
+        </p>
+        <p>
+          <strong>Education:</strong>M.B.B.S at Govt. Medical College, Patiala
+          in year 1970
+        </p>
+        <p><strong>Consultation Fee:</strong> 1000 rs. per session</p>
+        <p>
+          <strong>Available Timings:</strong> Monday to Friday, 9:00 AM - 5:00
+          PM
+        </p>
+        <p><strong>Location:</strong>Tagore hospital,Jalandhar</p>
+      </div>
+
+      <!-- Appointment Form Section -->
+      <div class="appointment-form">
+        <h2>Book an Appointment</h2>
+        <form action="http://localhost/komal/submit_appointment.php" method="POST">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="appointmentDate">Preferred Date:</label>
+          <input
+            type="date"
+            id="appointmentDate"
+            name="appointmentDate"
+            required
+          />
+
+          <label for="appointmentTime">Preferred Time:</label>
+          <input
+            type="time"
+            id="appointmentTime"
+            name="appointmentTime"
+            required
+          />
+
+          <label for="reason">Reason for Appointment:</label>
+          <textarea id="reason" name="reason" rows="4" required></textarea>
+
+          <button type="submit">Book Appointment</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

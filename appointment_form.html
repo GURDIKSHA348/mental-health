@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Doctor Appointment Form</title>
+    <link rel="stylesheet" href="page.css" />
+    <style>
+       
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+       
+        .header {
+            text-align: center;
+            color: rgb(10, 10, 10);
+            width: 100%;
+            padding: 20px 0;
+        
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Form Container */
+        .form-container {
+            background: rgba(255, 255, 255, 0.1); /* More transparency */
+            backdrop-filter: blur(5px); /* Slightly stronger blur */
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+            animation: slideIn 1s ease-in-out;
+            margin-bottom: 20px; 
+        }
+
+        h2 {
+            color: #121313;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #191717;
+            font-size: 16px;
+        }
+
+        
+        .input-group {
+            text-align: left;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1a0e0e;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e7dddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.2);
+    color: #150d0d;
+    outline: none;
+    box-sizing: border-box; /* Prevents size overflow */
+}
+
+input:focus, input:hover {
+    border-color: #00aaff;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.8);
+    transform: scale(1.02); /* Reduced from 1.05 to prevent overflow */
+    transition: 0.2s ease-in-out;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light white for better contrast */
+    font-style: italic;
+}
+
+
+        
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Links */
+        a {
+            color: #00aaff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 10px;
+            color: rgb(16, 2, 2);
+            padding: 12px;
+            text-align: center;
+            width: 100%;
+           
+            bottom: 0;
+            position: relative;
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+   </style>
+
+</head>
+<body>
+    <nav>
+        <H4>MENTOR care</H4>
+        <div class="header">
+            <div class="logo-container">
+               <img src="logoo.jpg" class="logo" alt="MENTOR CARE logo"  height="50px">
+            </div>
+               
+        
+        <ul class="navbar">
+        
+         <li><a href="home.html">Home</a></li>
+          <li><a href="register.html">Register/login</a></li>
+          <li><a href="about us.html">Appointment</a></li>
+          <li><a href="service.html"> services</a></li>
+          <li><a href="ambulance.html">Ambulance </a></li>
+          <li><a href="blog.html"> Blogs</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+               <li><a href="FAQ.html">FAQ</a></li>
+               <li><a href="about.html"> About us</a></li>
+  </ul>
+  </div>
+   </nav>
+  <br><br><br>
+    <h2>Book a Mental Health Appointment</h2>
+
+    <form action="http://localhost/komal/submit_appointment.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="contact">Contact:</label><br>
+        <input type="text" id="contact" name="contact" required><br><br>
+
+       
+
+        <label for="date">Appointment Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="symptoms">Symptoms:</label><br>
+        <textarea id="symptoms" name="symptoms" required></textarea><br><br>
+
+
+        <input type="submit" value="Submit Appointment">
+    </form>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Doctor Appointment Form</title>
+    <link rel="stylesheet" href="page.css" />
+    <style>
+       
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+       
+        .header {
+            text-align: center;
+            color: rgb(10, 10, 10);
+            width: 100%;
+            padding: 20px 0;
+        
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Form Container */
+        .form-container {
+            background: rgba(255, 255, 255, 0.1); /* More transparency */
+            backdrop-filter: blur(5px); /* Slightly stronger blur */
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+            animation: slideIn 1s ease-in-out;
+            margin-bottom: 20px; 
+        }
+
+        h2 {
+            color: #121313;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #191717;
+            font-size: 16px;
+        }
+
+        
+        .input-group {
+            text-align: left;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1a0e0e;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e7dddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.2);
+    color: #150d0d;
+    outline: none;
+    box-sizing: border-box; /* Prevents size overflow */
+}
+
+input:focus, input:hover {
+    border-color: #00aaff;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.8);
+    transform: scale(1.02); /* Reduced from 1.05 to prevent overflow */
+    transition: 0.2s ease-in-out;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light white for better contrast */
+    font-style: italic;
+}
+
+
+        
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Links */
+        a {
+            color: #00aaff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 10px;
+            color: rgb(16, 2, 2);
+            padding: 12px;
+            text-align: center;
+            width: 100%;
+           
+            bottom: 0;
+            position: relative;
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+   </style>
+
+</head>
+<body>
+    <nav>
+        <H4>MENTOR care</H4>
+        <div class="header">
+            <div class="logo-container">
+               <img src="logoo.jpg" class="logo" alt="MENTOR CARE logo"  height="50px">
+            </div>
+               
+        
+        <ul class="navbar">
+        
+         <li><a href="home.html">Home</a></li>
+          <li><a href="register.html">Register/login</a></li>
+          <li><a href="about us.html">Appointment</a></li>
+          <li><a href="service.html"> services</a></li>
+          <li><a href="ambulance.html">Ambulance </a></li>
+          <li><a href="blog.html"> Blogs</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+               <li><a href="FAQ.html">FAQ</a></li>
+               <li><a href="about.html"> About us</a></li>
+  </ul>
+  </div>
+   </nav>
+  <br><br><br>
+    <h2>Book a Mental Health Appointment</h2>
+
+    <form action="http://localhost/komal/submit_appointment.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="contact">Contact:</label><br>
+        <input type="text" id="contact" name="contact" required><br><br>
+
+       
+
+        <label for="date">Appointment Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="symptoms">Symptoms:</label><br>
+        <textarea id="symptoms" name="symptoms" required></textarea><br><br>
+
+
+        <input type="submit" value="Submit Appointment">
+    </form>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Doctor Appointment Form</title>
+    <link rel="stylesheet" href="page.css" />
+    <style>
+       
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+       
+        .header {
+            text-align: center;
+            color: rgb(10, 10, 10);
+            width: 100%;
+            padding: 20px 0;
+        
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Form Container */
+        .form-container {
+            background: rgba(255, 255, 255, 0.1); /* More transparency */
+            backdrop-filter: blur(5px); /* Slightly stronger blur */
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+            animation: slideIn 1s ease-in-out;
+            margin-bottom: 20px; 
+        }
+
+        h2 {
+            color: #121313;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #191717;
+            font-size: 16px;
+        }
+
+        
+        .input-group {
+            text-align: left;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1a0e0e;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e7dddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.2);
+    color: #150d0d;
+    outline: none;
+    box-sizing: border-box; /* Prevents size overflow */
+}
+
+input:focus, input:hover {
+    border-color: #00aaff;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.8);
+    transform: scale(1.02); /* Reduced from 1.05 to prevent overflow */
+    transition: 0.2s ease-in-out;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light white for better contrast */
+    font-style: italic;
+}
+
+
+        
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Links */
+        a {
+            color: #00aaff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 10px;
+            color: rgb(16, 2, 2);
+            padding: 12px;
+            text-align: center;
+            width: 100%;
+           
+            bottom: 0;
+            position: relative;
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+   </style>
+
+</head>
+<body>
+    <nav>
+        <H4>MENTOR care</H4>
+        <div class="header">
+            <div class="logo-container">
+               <img src="logoo.jpg" class="logo" alt="MENTOR CARE logo"  height="50px">
+            </div>
+               
+        
+        <ul class="navbar">
+        
+         <li><a href="home.html">Home</a></li>
+          <li><a href="register.html">Register/login</a></li>
+          <li><a href="about us.html">Appointment</a></li>
+          <li><a href="service.html"> services</a></li>
+          <li><a href="ambulance.html">Ambulance </a></li>
+          <li><a href="blog.html"> Blogs</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+               <li><a href="FAQ.html">FAQ</a></li>
+               <li><a href="about.html"> About us</a></li>
+  </ul>
+  </div>
+   </nav>
+  <br><br><br>
+    <h2>Book a Mental Health Appointment</h2>
+
+    <form action="http://localhost/komal/submit_appointment.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="contact">Contact:</label><br>
+        <input type="text" id="contact" name="contact" required><br><br>
+
+       
+
+        <label for="date">Appointment Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="symptoms">Symptoms:</label><br>
+        <textarea id="symptoms" name="symptoms" required></textarea><br><br>
+
+
+        <input type="submit" value="Submit Appointment">
+    </form>
+
+</body>
+</html>
