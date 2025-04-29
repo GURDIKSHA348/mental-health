@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Awareness</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            flex-grow: 1;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        h3 {
+            color: #00796b;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            background-color: #e8f5e9;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        ol li {
+            margin: 10px 0;
+        }
+        .image-section img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .video-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logout-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #f44336;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .logout-btn:hover {
+            background-color: #d32f2f;
+        }
+        footer {
+            background-color: #4CAF50;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    
+        <h1>Mental Health Awareness</h1>
+        <p>Promoting Well-Being and Emotional Health</p>
+    </header>
+
+    <div class="content">
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="mental awareness.jpg" alt="Mental Health Image" height="500" width="500">
+        </div>
+
+        <h2>Understanding Mental Health</h2>
+        <p>Mental health refers to our emotional, psychological, and social well-being. It influences how we think, feel, and behave, and helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood.</p>
+
+        <div class="video-section">
+            <h3>Watch: Mental Health Awareness Video</h3>
+            <iframe width="560" height="315" src="bicycle.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <h3>Common Mental Health Issues</h3>
+        <ul>
+            <li>Depression</li>
+            <li>Anxiety</li>
+            <li>Stress</li>
+            <li>Post-Traumatic Stress Disorder (PTSD)</li>
+            <li>Bipolar Disorder</li>
+        </ul>
+
+        <h3>Tips for Maintaining Good Mental Health</h3>
+        <ol>
+            <li>Exercise regularly to improve mood and reduce stress.</li>
+            <li>Talk to someone you trust about your feelings.</li>
+            <li>Get enough sleep and practice relaxation techniques.</li>
+            <li>Eat a balanced diet and avoid harmful substances.</li>
+            <li>Engage in activities that bring joy and satisfaction.</li>
+        </ol>
+
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mental Health Awareness | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Logout function to redirect to the login page
+        function logout() {
+            window.location.href = 'register.html';
+        }
+    </script>
+</body>
+</html>
