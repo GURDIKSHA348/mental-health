@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="page.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Therapy Services</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e8f4f9;
+        color: #333;
+      }
+
+      /* Main container for the page */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Therapy section */
+      .therapy-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 50px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .therapy-section:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Image container */
+      .therapy-image {
+        flex: 1;
+        max-width: 50%;
+        overflow: hidden;
+      }
+
+      .therapy-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .therapy-image:hover img {
+        transform: scale(1.1);
+      }
+
+      /* Content container */
+      .therapy-content {
+        flex: 1.5;
+        padding: 40px;
+        background-color: #f9f9f9;
+        border-left: 2px solid #ddd;
+      }
+
+      .therapy-content h2 {
+        font-size: 32px;
+        margin-top: 0;
+        color: #007bff;
+      }
+
+      .therapy-content p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #555;
+      }
+
+      .therapy-content a {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .therapy-content a:hover {
+        background-color: #0056b3;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .therapy-section {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .therapy-image {
+          max-width: 100%;
+          margin-bottom: 20px;
+        }
+
+        .therapy-content {
+          border-left: none;
+          padding: 20px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+     
+    <nav>
+        <H4>MENTOR care</H4>
+        <div class="header">
+            <div class="logo-container">
+               <img src="logoo.jpg" class="logo" alt="MENTOR CARE logo"  height="50px">
+            </div>
+               
+        
+        <ul class="navbar">
+        
+         <li><a href="home.html">Home</a></li>
+          <li><a href="register.html">Register/login</a></li>
+          <li><a href="about us.html">Appointment</a></li>
+          <li><a href="service.html"> services</a></li>
+          <li><a href="ambulance.html">Ambulance </a></li>
+          <li><a href="blog.html"> Blogs</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+               <li><a href="FAQ.html">FAQ</a></li>
+               <li><a href="about.html"> About us</a></li>
+  </ul>
+  </div>
+   </nav><br><br><br><br><br><br>
+  
+    <div class="container">
+      <!-- Therapy Section -->
+      <div class="therapy-section">
+        <!-- Therapy Image -->
+        <div class="therapy-image">
+          <img
+            src="healing.jpg"
+            alt="Therapy Session"
+          />
+        </div>
+
+        <!-- Therapy Content -->
+        <div class="therapy-content">
+          <h2>Healing Therapy</h2>
+          <p>
+            Our healing therapy sessions are designed to guide you through a
+            peaceful journey towards inner peace and well-being. Whether you
+            need emotional support or stress relief, we offer a variety of
+            therapy methods that can help you overcome challenges and live a
+            balanced life.
+          </p>
+        </div>
+      </div>
+
+      <!-- Therapy Section 2 -->
+      <div class="therapy-section">
+        <!-- Therapy Image -->
+        <div class="therapy-image">
+          <img
+            src="counselling.jpg"
+            alt="Therapy Session"
+          />
+        </div>
+
+        <!-- Therapy Content -->
+        <div class="therapy-content">
+          <h2>Counseling Therapy</h2>
+          <p>
+            Our professional counselors are here to listen and help you navigate
+            life's difficulties. We provide personalized therapy for
+            individuals, couples, and families.
+          </p>
+        </div>
+      </div>
+
+      <!-- Therapy Section 3 -->
+      <div class="therapy-section">
+        <!-- Therapy Image -->
+        <div class="therapy-image">
+          <img
+            src="yoga and meditation.jpg"
+            alt="Therapy Session"
+          />
+        </div>
+
+        <!-- Therapy Content -->
+        <div class="therapy-content">
+          <h2>Yoga & Meditation</h2>
+          <p>
+            Relax your body and mind with our yoga and meditation sessions. Our
+            certified instructors guide you through the process to achieve deep
+            relaxation and mindfulness.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
