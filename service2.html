@@ -1,164 +1,47 @@
-<!DOCTYPE html>
 <html lang="en">
+  <!--Screen Size Best at greater than 630px-->
+
   <head>
     <link rel="stylesheet" href="page.css" />
-    <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Medication Management - Mental Health</title>
-    <style>
-      body {
-        font-family: "Arial", sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f2f9fc;
-        color: #333;
-      }
-
-      /* Main container for the page */
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-
-      /* Section Heading */
-      .section-heading {
-        text-align: center;
-        font-size: 36px;
-        color: #004d6e;
-        margin-top: 50px;
-      }
-
-      /* Medication Management section */
-      .medication-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 50px;
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 30px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      /* Image Section */
-      .medication-image {
-        flex: 1;
-        margin-right: 30px;
-      }
-
-      .medication-image img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        object-fit: cover;
-      }
-
-      /* Content Section */
-      .medication-content {
-        flex: 2;
-        color: #555;
-      }
-
-      .medication-content h2 {
-        font-size: 28px;
-        color: #005f73;
-      }
-
-      .medication-content p {
-        font-size: 18px;
-        line-height: 1.6;
-      }
-
-      .btn {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-      }
-
-      .btn:hover {
-        background-color: #0056b3;
-      }
-
-      /* FAQ Section */
-      .faq-section {
-        margin-top: 60px;
-      }
-
-      .faq-section h2 {
-        font-size: 32px;
-        color: #004d6e;
-        text-align: center;
-      }
-
-      .faq-item {
-        margin-top: 20px;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      .faq-item h3 {
-        font-size: 24px;
-        color: #333;
-      }
-
-      .faq-item p {
-        font-size: 18px;
-        color: #555;
-        line-height: 1.6;
-      }
-
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        .medication-section {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .medication-image {
-          margin-right: 0;
-          margin-bottom: 20px;
-        }
-
-        .medication-content {
-          text-align: center;
-        }
-      }
-    </style>
+    <!-- Google Fonts Link For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <script src="script.js" defer></script>
   </head>
+
+  <title>Mental health</title>
   <body>
-     
+  
+ 
     <nav>
-        <H4>MENTOR care</H4>
-        <div class="header">
-            <div class="logo-container">
-               <img src="logoo.jpg" class="logo" alt="MENTOR CARE logo"  height="50px">
-            </div>
-               
-        
-        <ul class="navbar">
-        
-         <li><a href="home.html">Home</a></li>
-          <li><a href="register.html">Register/login</a></li>
-          <li><a href="about us.html">Appointment</a></li>
-          
-          <li><a href="service.html"> services</a></li>
-          <li><a href="ambulance.html">Ambulance </a></li>s
-          <li><a href="blog.html"> Blogs</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-               <li><a href="FAQ.html">FAQ</a></li>
-               <li><a href="about us.html"> About us</a></li>
-  </ul>
-  </div>
-   </nav><br><br><br><br><br><br>
+      <H4>MENTOR care</H4>
+      <div class="header">
+          <div class="logo-container">
+            <img src="logoo.jpg" class="logo" alt="MENTOR CARE logo"  height="50px">
+          </div>
+             
+      
+      <ul class="navbar">
+       <li><a href="home.html">Home</a></li>
+        <li><a href="register.html">Register/login</a></li>
+        <li><a href="about us.html">Appointment</a></li>
+        <li><a href="service.html"> services</a></li>
+        <li><a href="ambulance.html">Ambulance </a></li>
+        <li><a href="blog.html"> Blogs</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+		     <li><a href="FAQ.html">FAQ</a></li>
+         <li><a href="about.html"> About us</a></li>
+</ul>
+</div>
+</nav>><br><br><br><br><br><br>
     <div class="container">
       <!-- Section Heading -->
       <h1 class="section-heading">Medication Management for Mental Health</h1>
@@ -236,3 +119,124 @@
 
   </body>
 </html>
+<style>
+
+  /* Main container for the page */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Section Heading */
+  .section-heading {
+    text-align: center;
+    font-size: 36px;
+    color: #004d6e;
+    margin-top: 50px;
+  }
+
+  /* Medication Management section */
+  .medication-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Image Section */
+  .medication-image {
+    flex: 1;
+    margin-right: 30px;
+  }
+
+  .medication-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  /* Content Section */
+  .medication-content {
+    flex: 2;
+    color: #555;
+  }
+
+  .medication-content h2 {
+    font-size: 28px;
+    color: #005f73;
+  }
+
+  .medication-content p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* FAQ Section */
+  .faq-section {
+    margin-top: 60px;
+  }
+
+  .faq-section h2 {
+    font-size: 32px;
+    color: #004d6e;
+    text-align: center;
+  }
+
+  .faq-item {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .faq-item h3 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .faq-item p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .medication-section {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .medication-image {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .medication-content {
+      text-align: center;
+    }
+  }
+</style>
